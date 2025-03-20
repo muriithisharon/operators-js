@@ -39,11 +39,5 @@ const sentence = "A wonderful world";
 console.log(word1.toUpperCase());
 console.log(word2.toLowerCase());
 console.log(word3.toLowerCase());
-console.log(
-    sentence
-    .toLowerCase()
-    .split("")
-    .map(word => word.charAt(0).toUpperCase()+word.slice(1))
-    .join("")
-);
+console.log(sentence.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase()+word.slice(1)).join(" "));
 
